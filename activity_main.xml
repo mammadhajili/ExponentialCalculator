@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity"
+    android:backgroundTint="@android:color/darker_gray"
+    android:clickable="false"
+    android:background="@android:color/darker_gray">
+
+    <TextView
+        android:layout_width="180dp"
+        android:layout_height="40dp"
+        android:textSize="24dp"
+        android:text="Enter Power:"
+        android:textStyle="bold"
+        android:textColor="#394cfd"
+        android:id="@+id/POW"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:id="@+id/txt1"
+        android:ems="10"
+        android:textSize="28dp"
+        android:layout_below="@+id/POW"
+        android:background="#394cfd"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+    <TextView
+        android:layout_width="180dp"
+        android:layout_height="40dp"
+        android:text="Accurasy-nth power of 10"
+        android:textStyle="bold"
+        android:textColor="#394cfd"
+        android:textSize="24dp"
+        android:id="@+id/textView"
+        android:layout_marginTop="36dp"
+        android:layout_below="@+id/txt1"
+        android:layout_alignLeft="@+id/txt1"
+        android:layout_alignStart="@+id/txt1"
+        android:layout_alignRight="@+id/txt1"
+        android:layout_alignEnd="@+id/txt1" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:id="@+id/txt2"
+        android:ems="10"
+        android:textSize="28dp"
+        android:background="#394cfd"
+        android:layout_below="@+id/textView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="110dp"
+        android:layout_height="70dp"
+        android:text="Calculate"
+        android:id="@+id/button"
+        android:layout_marginBottom="54dp"
+        android:layout_above="@+id/answer"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="110dp"
+        android:layout_height="70dp"
+        android:text="Clear"
+        android:id="@+id/button2"
+        android:layout_alignTop="@+id/button"
+        android:layout_alignRight="@+id/txt2"
+        android:layout_alignEnd="@+id/txt2" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="80dp"
+        android:id="@+id/answer"
+        android:ems="10"
+        android:textSize="28dp"
+        android:background="#394cfd"
+        android:layout_alignParentBottom="true"
+        android:layout_alignLeft="@+id/txt2"
+        android:layout_alignStart="@+id/txt2" />
+
+
+
+
+</RelativeLayout>
